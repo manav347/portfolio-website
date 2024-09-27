@@ -1,0 +1,35 @@
+/* Override the default timeline styles */
+.timeline {
+  background-color: #cf8686 !important;
+  max-width: 90%; /* Adjust timeline width */
+}
+
+/* Override the default event styles */
+.event {
+  border-left: 4px solid #ef795a;
+  margin-bottom: 2em;
+}
+
+/* Customize the event icon */
+.icon {
+  background-color: #3498db !important; /* Change the icon color */
+  outline-color: #ffffff !important; /* Change icon border outline */
+}
+
+/* Customize the date */
+.date {
+  background-color: #2ecc71 !important; /* Change date background */
+  color: white !important; /* Change date text color */
+}
+
+/* Customize event title */
+.body h3 {
+  font-size: 2em;
+  color: #333 !important;
+}
+
+/* Customize event subtitle */
+.body h4 {
+  font-size: 1.5em;
+  color: #555;
+}

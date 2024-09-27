@@ -1,0 +1,42 @@
+# Node.js dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Backend specific
+Backend/node_modules/
+Backend/.env
+Backend/logs
+Backend/package-lock.json
+
+# Frontend specific
+Frontend/node_modules/
+Frontend/public/static/
+Frontend/src/**/*.test.js
+Frontend/package-lock.json
+
+# Testing coverage reports
+/coverage
+
+# Build outputs
+/build
+/dist
+
+# Miscellaneous
+.DS_Store
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore environment variables and log files
+.env
+*.log
+
+# Miscellaneous
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
