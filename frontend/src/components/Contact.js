@@ -43,7 +43,6 @@ const Contact = () => {
 
   const position = [41.83566, -87.62584]; // Coordinates
 
-  // Custom emoji marker
   const customIcon = L.divIcon({
     className: "custom-icon",
     html: "📍",
