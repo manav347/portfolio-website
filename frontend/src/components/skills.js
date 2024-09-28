@@ -8,7 +8,9 @@ const Skills = () => {
   useEffect(() => {
     const fetchSkills = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/skills"); // Updated endpoint
+        const response = await axios.get(
+          `${process.env.REACT_APP_API_URL}/skills`
+        ); // Updated endpoint
         setSkills(response.data); // Store skills data in state
       } catch (error) {
         console.error("Error fetching skills", error);

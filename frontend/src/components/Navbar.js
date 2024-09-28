@@ -7,7 +7,8 @@ const Navbar = () => {
   return (
     <Nav>
       <NavItem to="/about">About</NavItem>
-      <NavItem to="/project">Project</NavItem>
+      <NavItem to="/project">Projects</NavItem>
+      <NavItem to="/experience">Experience</NavItem>
       <NavItem to="/education">Education</NavItem>
       <NavItem to="/skills">Skills</NavItem>
       {/* <NavItem to="/blog">Blog</NavItem> */}

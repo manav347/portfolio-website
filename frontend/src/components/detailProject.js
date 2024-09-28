@@ -12,7 +12,7 @@ const DetailProject = () => {
     const fetchProjectDetails = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/project/${project_id}`
+          `${process.env.REACT_APP_API_URL}/project/${project_id}`
         );
         setProject(response.data); // Set project data
         setLoading(false); // Set loading to false

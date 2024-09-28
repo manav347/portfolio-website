@@ -1,8 +1,7 @@
 import React, { useEffect, useState, Fragment } from "react";
 import axios from "axios";
 import { Timeline, Event } from "./customTimeline/customTimeLine";
-// import { Timeline, Event } from "react-timeline-scribble";
-import styled from "styled-components"; // Moved to the top
+import styled from "styled-components";
 
 const EducationTimeline = () => {
   const [education, setEducation] = useState([]);
@@ -10,7 +9,9 @@ const EducationTimeline = () => {
   useEffect(() => {
     const fetchEducation = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/education");
+        const response = await axios.get(
+          `${process.env.REACT_APP_API_URL}/education`
+        );
         setEducation(response.data);
       } catch (error) {
         console.error("Error fetching education data", error);
@@ -43,8 +44,6 @@ const EducationTimeline = () => {
 };
 
 export default EducationTimeline;
-
-// Styled Components, this import should be at the top of the file
 
 const EducationSection = styled.section`
   padding: 0 40px 40px;

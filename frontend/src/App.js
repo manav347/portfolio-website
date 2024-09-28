@@ -5,6 +5,7 @@ import styled from "styled-components";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Summary from "./components/summary";
+import Experience from "./components/experience";
 import Education from "./components/education";
 import Portfolio from "./components/Portfolio";
 import DetailProject from "./components/detailProject";
@@ -30,6 +31,7 @@ const App = () => {
               <Route path="/about" element={<Summary />} />
               <Route path="/project" element={<Portfolio />} />
               <Route path="/project/:project_id" element={<DetailProject />} />
+              <Route path="/experience" element={<Experience />} />
               <Route path="/education" element={<Education />} />
               <Route path="/skills" element={<Skills />} />
               <Route path="/contact" element={<Contact />} />
